@@ -1,4 +1,4 @@
-package io.epopeia;
+package io.epopeia.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
