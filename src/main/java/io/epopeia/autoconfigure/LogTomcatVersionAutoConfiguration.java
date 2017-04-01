@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnClass(Tomcat.class) // only if tomcat class is on classpath
+@ConditionalOnClass(Tomcat.class) // only if Tomcat class is available
 @ConditionalOnProperty(name = "log-tomcat-version", matchIfMissing = true)
 public class LogTomcatVersionAutoConfiguration {
 
