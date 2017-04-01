@@ -13,13 +13,13 @@ public class LogBeanPostProcessorsCreation implements BeanPostProcessor {
 
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-		logger.info("Initializing bean '" + beanName + "'");
+		logger.debug("Initializing bean '" + beanName + "'");
 		return bean;
 	}
 
 	@Override
 	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-		logger.info("Bean '" + beanName + "' created : " + bean.toString());
+		logger.debug("Bean '" + beanName + "' created : " + bean.toString());
 		return bean;
 	}
 }
