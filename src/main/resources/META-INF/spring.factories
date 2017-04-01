@@ -1,0 +1,5 @@
+# spring.factories is a general mechanism to spring loads things up
+
+# Ex: Locating auto-configuration candidates without @ComponentScan
+# org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+# io.epopeia.autoconfigure.LogTomcatVersionAutoConfiguration
