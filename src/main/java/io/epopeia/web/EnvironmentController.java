@@ -17,4 +17,9 @@ public class EnvironmentController {
 	public String containerEnvironment() {
 		return containerEnvironment.toString();
 	}
+	
+	@RequestMapping("/profile-property")
+	public String profileProperty() {
+		return containerEnvironment.getProperty("profile.property");
+	}
 }
