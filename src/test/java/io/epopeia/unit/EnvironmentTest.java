@@ -6,10 +6,13 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 import org.springframework.mock.env.MockEnvironment;
 
 import io.epopeia.web.EnvironmentController;
 
+@RunWith(JUnit4.class) // explicitly runner for jUnit4
 public class EnvironmentTest {
 
 	private EnvironmentController environmentController;
