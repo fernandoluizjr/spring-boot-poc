@@ -9,10 +9,12 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.rules.SpringClassRule;
 import org.springframework.test.context.junit4.rules.SpringMethodRule;
 
 @RunWith(MockitoJUnitRunner.class) // a different runner from some framework
+@ContextConfiguration // set how to load the container (default here)
 public class JunitWithMockitoPlusSpringContext {
 
 	@ClassRule // class and method rules do the same job as the spring runner
