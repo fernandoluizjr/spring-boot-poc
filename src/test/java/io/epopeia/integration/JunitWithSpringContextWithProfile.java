@@ -20,7 +20,7 @@ public class JunitWithSpringContextWithProfile {
 	public ApplicationContext springContext;
 
 	@Test
-	public final void testHome() {
+	public void mustBeActivatedTwoProfilesInTheContext() {
 		assertNotNull(springContext);
 		assertEquals(springContext.getEnvironment().getActiveProfiles().length, 2);
 	}
